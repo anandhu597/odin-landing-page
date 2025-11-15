@@ -1,0 +1,110 @@
+/* ------------------------------------------- */
+/* --- LANDING PAGE STYLE GUIDE (Reference) --- */
+/* ------------------------------------------- */
+
+/* FONT */
+/* Font Used: Roboto (You'll need to link this from Google Fonts) */
+
+/* COLORS */
+/* Dark Background (Hero, Footer, Info Header Text): #1F2937 */
+/* Light Gray Background (Quote Section): #E5E7EB */
+/* White Text/Logo Text: #F9FAF8 */
+/* Button/CTA Background: #3882F6 */
+/* Secondary Text/Header Link Text: #E5E7EB */
+
+/* FONT SIZES & WEIGHTS */
+
+/* Hero Main Text ("This website is awesome"): 48px, #F9FAF8, weight: 900 */
+/* Hero Logo Text: 24px, #F9FAF8 */
+/* Hero Secondary Text / Header Link Text: 18px, #E5E7EB */
+/* Information Header Text: 36px, #1F2937, weight: 900 */
+/* Quote Text: 36px, #1F2937, weight: 300 */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*--------Header-Section--------*/
+header {
+  background-color: #1f2937;
+  padding: 16px 0 80px 0;
+}
+
+.nav,
+.hero {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+/****nav-section****/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: #f9faf8;
+  font-size: 24px;
+  font-weight: bold;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+.nav a {
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+/****hero-section****/
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text-container,
+.hero-image-placeholder {
+  flex: 1;
+}
+
+.hero-image-placeholder {
+  height: 200px;
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.hero-image-placeholder img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-text-container h1 {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.hero-text-container p {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 16px;
+}
+
+.hero-text-container button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  padding: 8px 32px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
